@@ -1,0 +1,168 @@
+
+body {
+    background: url("https://th.bing.com/th/id/OIP.qvTAqS9QdFsOti6y9_ZKlwHaE8?rs=1&pid=ImgDetMain");
+    font-family: "Mountains of Christmas", serif;
+    background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  
+  #container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+  }
+  
+  h1{
+      width: 800px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 80px;
+      color: rgb(128,12,121);
+      background-color: rgba(255,255,0,0.73);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 700;
+      padding: 0.5em 0;
+      box-shadow: 5px 4px 4px rgb(168,53,53);
+      font-family: "Protest Revolution", sans-serif;
+      text-shadow: 5px 4px 4px rgba(0,0,0,0.87);
+  }
+  .cartao {
+    margin: 1rem 1rem;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+  }
+  
+  .cartaoconteudo {
+    background-color: rgb(0,255,173);
+    text-align: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+    border-radius: 500px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid black;
+  }
+  
+  .cartaoconteudo h3 {
+    color: #E91E63;
+    background-color: rgb(33,4,103);
+    border: 2px solid black;
+    box-shadow: 5px 4px 4px rgba(0,0,0,0.88);
+    text-align: left;
+    padding: 0.5rem;
+    padding-top: 0px;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1.5vw;
+    backface-visibility: hidden;
+    font-family: "Protest Revolution", sans-serif;
+  }
+  
+  .cartaoconteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 1.4vw;
+    padding-top: 0px;
+  }
+  
+  .pergunta p {
+    color: rgb(231,2,12);
+    font-weight: 500;
+    font-size: 35px;
+    text-shadow: 5px 4px 4px rgba(0,0,0,0.68);
+  }
+  
+  .resposta p {
+    color: purple;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 5px 4px 4px rgba(0,0,0,0.68);
+    text-align: center;
+    margin-top: 7rem;
+  }
+  
+  .cartao.active .cartaoconteudo {
+    transform: rotateY(180deg);
+  }
+  
+  .pergunta,
+  .resposta {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .resposta {
+    transform: rotateY(180deg);
+    background-color: rgb(0,136,143);
+    border-radius:500px;
+  }
+  
+  footer {
+    background-color: transparent;
+    color: black;
+    background-color: rgba(241,75,104,0.81);
+    text-align: center;
+    font-weight: 700;
+    padding: 0.5em 0;
+    box-shadow: 5px 4px 4px red;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    font-family: "Mountains of Christmas", serif;
+    padding-bottom: 20px;
+    
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+    font-size: 25px;
+    text-shadow: 5px 4px 4px rgb(71,1,42);
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: yellow;
+  }
+  
+  footer a:hover{
+    text-decoration: underline;
+    color: pink;
+  }
+  @media (max-width: 560px) {
+    
+    h1{
+      width: 100%;
+      text-align: center;
+      font-size: 5vw; 
+    }
+    .cartao {
+        flex: 1 0 calc(100% - 1rem)
+    }
+  
+    .cartaoconteudo h3 {
+        font-size: 5vw;
+    }
+  
+    .cartaoconteudo p {
+        font-size: 7vw;
+    }
+    footer p{
+      max-width: 100%;
+      font-size: 5.5vw;
+    }
+    
+  }
